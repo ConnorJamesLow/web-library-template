@@ -1,0 +1,17 @@
+/* CSS Reset */
+* {
+    all: unset;
+    box-sizing: inherit;
+    color: inherit;
+    font: inherit;
+    position: inherit;
+}
+
+:where(script, style, head, link, meta, title, base, noscript) {
+    display: none;
+
+    :not(&) {
+        box-sizing: border-box;
+        display: block;
+    }
+}
