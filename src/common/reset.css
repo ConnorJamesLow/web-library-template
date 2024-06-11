@@ -1,5 +1,6 @@
 /* CSS Reset */
-* {
+@namespace svg url(http://www.w3.org/2000/svg);
+*:where(:not(svg|*)) {
     all: unset;
     box-sizing: inherit;
     color: inherit;
